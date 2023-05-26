@@ -6,4 +6,4 @@ const userName ='Andriy';
 const message = 'Vitajemo';
 const isOpen = true;
 const shouldConfirm = false;
-console.log('Cina',totalPrice)
+console.log(shouldConfirm);
