@@ -70,14 +70,38 @@
 
 // console.log(`Suma parnych ${totalParni}`);
 
-// Задача на if
-let balance = Number(prompt(`Skilky majesh €`));
-const payment = Number(prompt(`Vvedy sumu na jaku ty kupyv`));
-console.log(`Zahalna suma koshtiv, scho ty majesh stanovyt ${balance} € a chochesh profitkaty ${payment}`);
-if (payment <= balance) {
-    balance -= payment; 
-    console.log(`v tebe zalyshylosya ne mnoho ne malo, a ${balance} €`);
-} else {
-    console.log(`nema v tebe babulyosiv`);
-}
-console.log(`Operaciya zavershena`);
+// // Задача на if
+// let balance = Number(prompt(`Skilky majesh €`));
+// const payment = Number(prompt(`Vvedy sumu na jaku ty kupyv`));
+// console.log(`Zahalna suma koshtiv, scho ty majesh stanovyt ${balance} € a chochesh profitkaty ${payment}`);
+// if (payment <= balance) {
+//     balance -= payment; 
+//     console.log(`v tebe zalyshylosya ne mnoho ne malo, a ${balance} €`);
+// } else {
+//     console.log(`nema v tebe babulyosiv`);
+// }
+// console.log(`Operaciya zavershena`);
+
+
+// // Задача на if по знижках
+// let totalSpent = Number(prompt(`skilky mozh z vas vyzhaty?`));
+// let payment = 651;
+// let discount = 0;
+// if(totalSpent<100){
+//     console.log(`Vy zelenyy`);
+// } else if (totalSpent >= 100 && totalSpent<=1000) {
+//     console.log(`Vy bronzovyy pryzer i majete znyzhku 2%`);
+//     discount = 0.02;
+// } else if (totalSpent >= 1000 && totalSpent<=5000) {
+//     console.log(`Vy sribnyy pryzer i majete znyzhku 5%`);
+//     discount = 0.05;
+// }  
+// else  {
+//     console.log(`Vy zolotyy pryzer i majete znyzhku 10%`);
+//     discount = 0.1;
+// }
+// payment -= payment * discount
+// // payment = payment - payment * discount;
+// console.log(`Oformlyujemo Vam prodazh na sumu ${payment} iz znyzhkoyu ${discount*100}%`);
+// totalSpent += payment;
+// console.log(`Vsyoho vy u nas kupyly na sumu ${totalSpent}`);
