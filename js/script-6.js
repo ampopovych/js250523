@@ -52,24 +52,46 @@
 //   }
 
 
-function formatMessage(message, maxLength) {
+// function formatMessage(message, maxLength) {
+//     let result;
+//     // Change code below this line
+  
+//   if (message.length > maxLength) {
+//     result = `${message.slice(0, maxLength)} ...`;
+//   } else {
+//     result = message;
+// }
+//     /// Change code above this line
+//     return result;
+//   }
+//   console.log(formatMessage("cmvndnb dfnlkndf kdfnlkdnmf lkdnvfl", 10));
+//   console.log(formatMessage("cmvndnb dfnlkndf kdfnlkdnmf lkdnvfl", 15));
+//   console.log(formatMessage("cmvndnb dfnlkndf kdfnlkdnmf lkdnvfl", 20));
+//   console.log(formatMessage("cmvndnb dfnlkndf kdfnlkdnmf lkdnvfl", 25));
+//   console.log(formatMessage("cmvndnb dfnlkndf kdfnlkdnmf lkdnvfl", 30));
+//   console.log(formatMessage("cmvndnb dfnlkndf kdfnlkdnmf lkdnvfl", 35));
+//   console.log(formatMessage("cmvndnb dfnlkndf kdfnlkdnmf lkdnvfl", 40));
+//   console.log(formatMessage("cmvndnb dfnlkndf kdfnlkdnmf lkdnvfl", 45));
+  
+
+// function normalizeInput(input) {
+//     const normalizedInput = input.toUpperCase() ; // Change this line
+  
+//     return normalizedInput;
+//   }
+  
+//  console.log(normalizeInput("sfFSDfsaSF"));
+
+
+function checkForSpam(message) {
     let result;
     // Change code below this line
-  
-  if (message.length > maxLength) {
-    result = `${message.slice(0, maxLength)} ...`;
-  } else {
-    result = message;
-}
-    /// Change code above this line
+    
+  const normalizedWord = checkForSpam (message).toLowerCase();
+    const spam ='spam';
+    const sale = 'sale';
+    result = normalizedWord.includes(spam) || normalizedWord.includes(sale);
+    // Change code above this line
     return result;
   }
-  console.log(formatMessage("cmvndnb dfnlkndf kdfnlkdnmf lkdnvfl", 10));
-  console.log(formatMessage("cmvndnb dfnlkndf kdfnlkdnmf lkdnvfl", 15));
-  console.log(formatMessage("cmvndnb dfnlkndf kdfnlkdnmf lkdnvfl", 20));
-  console.log(formatMessage("cmvndnb dfnlkndf kdfnlkdnmf lkdnvfl", 25));
-  console.log(formatMessage("cmvndnb dfnlkndf kdfnlkdnmf lkdnvfl", 30));
-  console.log(formatMessage("cmvndnb dfnlkndf kdfnlkdnmf lkdnvfl", 35));
-  console.log(formatMessage("cmvndnb dfnlkndf kdfnlkdnmf lkdnvfl", 40));
-  console.log(formatMessage("cmvndnb dfnlkndf kdfnlkdnmf lkdnvfl", 45));
-  
+  console.log(checkForSpam("djnlsPamSmjnl"));
